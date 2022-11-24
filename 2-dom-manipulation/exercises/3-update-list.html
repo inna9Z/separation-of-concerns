@@ -46,6 +46,11 @@
           debugger;
 
           // write me! (... without using cloneNode, that's kind of cheating)
+          const actual = document.getElementById('actual');
+          const ulElement = actual.children[1];
+          const liElement = ulElement.children[0];
+          liElement.innerText = 'robots';
+          
         </script>
       </div>
 

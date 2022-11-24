@@ -45,6 +45,18 @@
           debugger;
 
           // write me! (... without using cloneNode, that's kind of cheating)
+        const actual = document.getElementById('actual');
+
+        const h1Element = document.createElement('h1');
+
+        h1Element.innerText = 'a list of things';
+        actual.appendChild(h1Element);
+        
+        const ulElement = actual.children[1];
+        ulElement.innerText = 'robots';
+
+
+
         </script>
       </div>
 
